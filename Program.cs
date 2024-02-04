@@ -22,10 +22,31 @@
 // 487 => 8^7 = 2 097 152
 // 254 => 5^4
 
-int number = 925;
-int secondDigit = number / 10 % 10;
-int thirdDigit = number % 10;
-int result = (int)Math.Pow(secondDigit, thirdDigit);
-// Результат переводится в целое число с помощью int
-Console.WriteLine($"{secondDigit} ^ {thirdDigit} = {result}");
+
+// int number = 925;
+// int secondDigit = number / 10 % 10;
+// int thirdDigit = number % 10;
+// int result = (int)Math.Pow(secondDigit, thirdDigit);
+// // Результат переводится в целое число с помощью int
+// Console.WriteLine($"{secondDigit} ^ {thirdDigit} = {result}");
+
+
+// Задача №4 
+// Напишите программу, которая выводит третью с конца
+// цифру заданного числа или сообщает, что третьей цифры
+// нет.
+// 456 => 6
+// 7812 => 8
+// 91 => Третьей цифры нет
+
+int number = 57765654;
+if(number >= 100)
+{
+    int result = (number / 100) % 10;
+    Console.WriteLine($"{result} Третья цифра от {number} c конца");
+}
+else
+{
+    Console.WriteLine("Двузначное число");
+}
 
